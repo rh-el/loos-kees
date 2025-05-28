@@ -46,8 +46,8 @@ async def main():
         if is_bandcamp_likes == "y":
             bandcamp_playlist = await bandcamp_likes_download()
             # print(bandcamp_playlist)
-            # result = await downloader.download_playlist(bandcamp_playlist)
-            # get_result(spotify_playlist, result)
+            result = await downloader.download_playlist(bandcamp_playlist)
+            get_result(bandcamp_playlist, result)
 
         is_done = input("anything else?: y/n - ").strip().lower()
         if is_done == "n":
