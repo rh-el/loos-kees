@@ -3602,3 +3602,956 @@
 2025-05-27 18:10:53,293 - clients.soulseek_client - INFO - Déconnecté de slskd
 2025-05-28 08:21:07,063 - clients.spotify_client - INFO - Authentification Spotify réussie
 2025-05-28 08:21:11,254 - __main__ - ERROR - URL de playlist requise
+2025-05-28 09:44:04,142 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:44:13,794 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:44:14,054 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:44:14,156 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:44:14,156 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:44:14,156 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:44:14,275 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:44:14,275 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:44:14,275 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:44:14,438 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:44:14,439 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:44:14,439 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:44:14,449 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:44:14,449 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:44:14,449 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:44:14,478 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:44:14,495 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:44:14,495 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:44:14,495 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:44:14,496 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:51:40,484 - clients.spotify_client - ERROR - error while getting playlist informations: invalid spotify url: print(f"[{i}/{len(tracks)}] Search: {track['artist']} - {track['title']}")
+2025-05-28 09:51:44,800 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:51:51,967 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:51:52,189 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:51:52,297 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:51:52,298 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:51:52,299 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:51:52,339 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:51:52,340 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:51:52,340 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:51:52,369 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:51:52,369 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:51:52,369 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:51:52,372 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:51:52,372 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:51:52,372 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:51:52,381 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:51:52,393 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:51:52,393 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:51:52,393 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:51:52,640 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,653 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,661 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,669 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,677 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,685 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,692 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,699 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:51:52,702 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:54:46,613 - clients.spotify_client - ERROR - error while getting playlist informations: invalid spotify url: print(f"🤡")
+2025-05-28 09:54:48,835 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:54:54,426 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:54:54,629 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:54:54,800 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:54:54,800 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:54:54,800 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:54:54,829 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:54:54,829 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:54:54,829 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:54:54,842 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:54:54,842 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:54:54,842 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:54:54,844 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:54:54,844 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:54:54,844 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:54:54,851 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:54:54,857 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:54:54,858 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:54:54,858 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:54:54,877 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,885 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,892 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,900 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,908 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,915 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,922 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,929 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:54:54,929 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:55:23,330 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:55:23,451 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:55:23,660 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:55:23,661 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:55:23,661 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:55:23,692 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:55:23,692 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:55:23,692 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:55:23,712 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:55:23,712 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:55:23,712 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:55:23,713 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:55:23,713 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:55:23,713 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:55:23,720 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:55:23,726 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:55:23,727 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:55:23,727 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:55:23,749 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,767 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,775 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,782 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,788 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,794 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,800 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,807 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:55:23,807 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:56:33,813 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:56:33,990 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:56:34,094 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:56:34,095 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:56:34,096 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:56:34,139 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:56:34,140 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:56:34,140 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:56:34,167 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:56:34,168 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:56:34,168 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:56:34,170 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:56:34,170 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:56:34,170 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:56:34,178 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:56:34,184 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:56:34,184 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:56:34,185 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:56:34,197 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,203 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,208 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,213 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,218 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,223 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,228 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,233 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:34,233 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:56:43,444 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:56:43,608 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:56:43,708 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:56:43,709 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:56:43,709 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:56:43,726 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:56:43,726 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:56:43,726 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:56:43,739 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:56:43,740 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:56:43,740 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:56:43,742 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:56:43,742 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:56:43,742 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:56:43,749 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:56:43,756 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:56:43,756 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:56:43,756 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:56:43,781 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,796 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,805 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,813 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,823 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,832 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,842 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,848 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:56:43,848 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:57:02,119 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:57:02,299 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:57:02,444 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:57:02,445 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:57:02,445 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:57:02,457 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:02,457 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:57:02,458 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:57:02,466 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:02,467 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:57:02,467 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:57:02,468 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:57:02,468 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:57:02,468 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:57:02,477 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:57:02,486 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:57:02,486 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:57:02,486 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:57:02,523 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,536 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,548 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,558 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,567 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,576 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,581 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,588 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:02,588 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:57:13,459 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:57:15,439 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:57:15,597 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:57:15,733 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:57:15,734 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:57:15,735 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:57:15,771 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:15,772 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:57:15,772 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:57:15,788 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:15,788 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:57:15,788 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:57:15,790 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:57:15,790 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:57:15,790 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:57:15,793 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:57:15,797 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:57:15,797 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:57:15,797 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:57:15,805 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,814 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,821 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,826 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,831 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,837 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,843 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,848 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:15,848 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:57:35,267 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:57:41,859 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:57:43,083 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:57:43,268 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:57:43,398 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:57:43,399 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:57:43,399 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:57:43,412 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:43,412 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:57:43,413 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:57:43,416 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:57:43,416 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:57:43,416 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:57:43,417 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:57:43,417 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:57:43,417 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:57:43,423 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:57:43,429 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:57:43,429 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:57:43,429 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:57:43,447 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,456 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,465 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,474 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,483 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,492 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,501 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,506 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:57:43,506 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:58:13,328 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:58:17,169 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:58:18,243 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:58:18,429 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:58:18,563 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:58:18,563 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:58:18,564 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:58:18,576 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:58:18,576 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:58:18,576 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:58:18,580 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:58:18,581 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:58:18,581 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:58:18,582 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:58:18,582 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:58:18,582 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:58:18,590 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:58:18,605 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:58:18,605 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:58:18,605 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:58:18,708 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,720 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,727 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,735 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,741 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,749 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,756 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,763 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:18,763 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:58:50,376 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:58:51,513 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:58:51,722 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:58:51,840 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:58:51,841 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:58:51,842 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:58:51,856 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:58:51,857 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:58:51,857 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:58:51,862 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:58:51,862 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:58:51,862 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:58:51,863 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:58:51,863 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:58:51,863 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:58:51,872 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:58:51,882 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:58:51,882 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:58:51,882 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:58:51,935 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:51,951 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:51,969 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:51,983 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:51,996 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:52,006 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:52,015 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:52,026 - clients.soulseek_client - ERROR - search / download error: object dict can't be used in 'await' expression
+2025-05-28 09:58:52,026 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:59:11,035 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:59:12,046 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:59:12,224 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:59:12,331 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:59:12,331 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:59:12,332 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:59:12,345 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:59:12,345 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:59:12,346 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:59:12,351 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:59:12,351 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:59:12,352 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:59:12,358 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:59:12,358 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:59:12,358 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:59:12,364 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:59:12,370 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:59:12,370 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:59:12,370 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:59:20,577 - clients.soulseek_client - ERROR - search / download error: object list can't be used in 'await' expression
+2025-05-28 09:59:24,198 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 09:59:24,232 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<main() done, defined at /Users/pttprr/_projects/loos-kees/main.py:21> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/Users/pttprr/_projects/loos-kees/main.py", line 44, in <module>
+    asyncio.run(main())
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 194, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 62, in __exit__
+    self.close()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 206, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 2040, in _run_once
+    handle._run()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/pttprr/_projects/loos-kees/main.py", line 33, in main
+    results = await downloader.download_playlist(playlist_url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pttprr/_projects/loos-kees/services/playlist_downloader.py", line 22, in download_playlist
+    await asyncio.gather(*[self.soulseek.search_and_download(track) for track in tracks])
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 683, in run_forever
+    self._run_once()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 2040, in _run_once
+    handle._run()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/pttprr/_projects/loos-kees/clients/soulseek_client.py", line 187, in search_and_download
+    time.sleep(2)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+2025-05-28 09:59:49,142 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 09:59:51,063 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 09:59:51,308 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 09:59:51,403 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 09:59:51,403 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 09:59:51,404 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 09:59:51,415 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:59:51,415 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 09:59:51,416 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 09:59:51,422 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 09:59:51,422 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 09:59:51,422 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 09:59:51,424 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 09:59:51,424 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 09:59:51,424 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 09:59:51,431 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 09:59:51,443 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 09:59:51,443 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 09:59:51,443 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 09:59:59,581 - clients.soulseek_client - ERROR - search / download error: 'coroutine' object has no attribute 'success'
+2025-05-28 10:00:07,722 - clients.soulseek_client - ERROR - search / download error: 'coroutine' object has no attribute 'success'
+2025-05-28 10:00:19,909 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:00:28,059 - clients.soulseek_client - ERROR - search / download error: 'coroutine' object has no attribute 'success'
+2025-05-28 10:00:48,440 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:00:54,528 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:02:35,963 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:02:42,586 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:02:42,752 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:02:42,854 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:02:42,855 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:02:42,855 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:02:42,864 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:02:42,864 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:02:42,864 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:02:42,867 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:02:42,867 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:02:42,867 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:02:42,868 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:02:42,868 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:02:42,869 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:02:42,873 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:02:42,879 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:02:42,879 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:02:42,880 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:02:53,408 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:02:53,841 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:02,391 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:02,722 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:17,200 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:17,287 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:25,563 - clients.soulseek_client - ERROR - Erreur lors du téléchargement: object bool can't be used in 'await' expression
+2025-05-28 10:03:45,855 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:03:51,944 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:06:58,205 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:07:09,003 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:07:09,200 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:07:09,312 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:07:09,312 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:07:09,312 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:07:09,323 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:07:09,323 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:07:09,323 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:07:09,327 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:07:09,327 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:07:09,327 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:07:09,329 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:07:09,329 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:07:09,329 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:07:09,337 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:07:09,341 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:07:09,341 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:07:09,341 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:07:38,161 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:08:17,093 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:16:59,394 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:16:59,496 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:16:59,623 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:16:59,624 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:16:59,625 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:16:59,645 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:16:59,645 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:16:59,645 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:16:59,650 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:16:59,650 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:16:59,650 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:16:59,653 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:16:59,653 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:16:59,653 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:16:59,661 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 3, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'justnice980'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:16:59,667 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:16:59,667 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:16:59,667 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:17:09,829 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:18:07,291 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:30:31,426 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:30:39,141 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:30:39,358 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:30:39,461 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:30:39,462 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:30:39,463 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:30:39,480 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:30:39,480 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:30:39,480 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:30:39,488 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:30:39,489 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:30:39,489 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:30:39,491 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:30:39,491 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:30:39,491 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:30:39,498 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Disconnected', 'isConnected': False, 'isLoggedIn': False, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 0, 'branchRoot': 'kykko', 'canAcceptChildren': False, 'childLimit': 25, 'children': [], 'hasParent': False, 'isBranchRoot': False, 'parent': ''}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:30:39,507 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Disconnected', 'isConnected': False, 'isLoggedIn': False, 'isTransitioning': False}
+2025-05-28 10:30:39,507 - clients.soulseek_client - INFO - Connexion au réseau Soulseek en cours...
+2025-05-28 10:30:39,873 - clients.soulseek_client - INFO - Résultat de connexion Soulseek: True
+2025-05-28 10:30:40,891 - clients.soulseek_client - INFO - Connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:30:40,891 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:30:40,892 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:31:14,628 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:31:14,780 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:31:14,891 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:31:14,891 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:31:14,891 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:32:23,500 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:32:29,583 - clients.soulseek_client - ERROR - http://localhost:5030 timeout
+2025-05-28 10:32:29,584 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:32:29,588 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:32:29,589 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:32:29,589 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:32:29,591 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:32:29,591 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:32:29,591 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:32:29,599 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 4, 'branchRoot': 'pirx808', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'SSadmin'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:32:29,609 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:32:29,609 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:32:29,609 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:32:29,609 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:35:31,563 - asyncio - ERROR - _GatheringFuture exception was never retrieved
+future: <_GatheringFuture finished exception=CancelledError()>
+Traceback (most recent call last):
+  File "/Users/pttprr/_projects/loos-kees/clients/soulseek_client.py", line 171, in search_and_download
+    async def search_and_download(self, track: dict) -> dict:
+asyncio.exceptions.CancelledError
+2025-05-28 10:35:33,657 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:35:40,090 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:35:40,271 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:35:40,390 - clients.spotify_client - INFO - found 8 tracks
+2025-05-28 10:35:40,391 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:35:40,392 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:35:40,409 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:35:40,410 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:35:40,410 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:35:40,416 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:35:40,416 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:35:40,416 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:35:40,418 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:35:40,418 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:35:40,418 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:35:40,425 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 4, 'branchRoot': 'pirx808', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'SSadmin'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:35:40,435 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:35:40,435 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:35:40,435 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:35:49,587 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:35:52,968 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:41:21,522 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:41:29,959 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:41:30,157 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:41:30,269 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:41:30,271 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:41:30,271 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:41:30,288 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:41:30,289 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:41:30,289 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:41:30,294 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:41:30,294 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:41:30,295 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:41:30,296 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:41:30,296 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:41:30,296 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:41:30,306 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Disconnected', 'isConnected': False, 'isLoggedIn': False, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 0, 'branchRoot': 'kykko', 'canAcceptChildren': False, 'childLimit': 25, 'children': [], 'hasParent': False, 'isBranchRoot': False, 'parent': ''}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:41:30,313 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Disconnected', 'isConnected': False, 'isLoggedIn': False, 'isTransitioning': False}
+2025-05-28 10:41:30,313 - clients.soulseek_client - INFO - Connexion au réseau Soulseek en cours...
+2025-05-28 10:41:30,625 - clients.soulseek_client - INFO - Résultat de connexion Soulseek: True
+2025-05-28 10:41:31,633 - clients.soulseek_client - INFO - Connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:41:31,633 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:41:31,633 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,633 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,633 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:41:31,634 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:42:56,963 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:42:59,626 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:42:59,879 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:43:00,045 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:43:00,046 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:43:00,046 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:43:00,058 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:43:00,058 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:43:00,058 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:43:00,063 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:43:00,063 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:43:00,063 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:43:00,065 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:43:00,065 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:43:00,065 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:43:00,072 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:43:00,084 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:43:00,085 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:43:00,085 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:43:00,085 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,085 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:43:00,086 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:44:18,658 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:44:25,473 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:44:25,741 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:44:25,848 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:44:25,848 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:44:25,849 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:44:25,859 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:44:25,859 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:44:25,859 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:44:25,863 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:44:25,864 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:44:25,864 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:44:25,866 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:44:25,866 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:44:25,866 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:44:25,871 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:44:25,878 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:44:25,878 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:44:25,878 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:44:25,879 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:45:08,256 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:45:09,586 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:45:09,785 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:45:09,913 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:45:09,914 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:45:09,914 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:45:09,928 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:45:09,928 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:45:09,928 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:45:09,934 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:45:09,934 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:45:09,934 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:45:09,937 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:45:09,938 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:45:09,938 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:45:09,945 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:45:09,955 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:45:09,955 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:45:09,955 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,956 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:09,957 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:45:46,855 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:45:48,050 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:45:48,235 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:45:48,393 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:45:48,394 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:45:48,394 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:45:48,402 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:45:48,402 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:45:48,402 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:45:48,405 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:45:48,405 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:45:48,405 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:45:48,406 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:45:48,406 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:45:48,406 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:45:48,411 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:45:48,418 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:45:48,418 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:45:48,418 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - ERROR - search / download error: SoulseekClient._remove_accents() takes 1 positional argument but 2 were given
+2025-05-28 10:45:48,419 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:46:18,743 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:46:19,446 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:46:19,654 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:46:19,761 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:46:19,761 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:46:19,761 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:46:19,770 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:46:19,771 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:46:19,771 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:46:19,774 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:46:19,774 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:46:19,774 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:46:19,775 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:46:19,775 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:46:19,775 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:46:19,784 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:46:19,790 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:46:19,790 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:46:19,791 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:46:34,760 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:51:21,805 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:51:23,732 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:51:23,914 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:51:24,024 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:51:24,025 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:51:24,025 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:51:24,046 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:51:24,046 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:51:24,046 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:51:24,051 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:51:24,051 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:51:24,051 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:51:24,053 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:51:24,053 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:51:24,053 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:51:24,061 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:51:24,069 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:51:24,069 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:51:24,069 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:51:38,377 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:51:38,409 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:51:38,410 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:54:03,922 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:54:11,880 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:54:12,080 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:54:12,225 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:54:12,225 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:54:12,226 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:54:12,236 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:54:12,236 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:54:12,236 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:54:12,239 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:54:12,239 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:54:12,240 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:54:12,242 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:54:12,242 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:54:12,242 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:54:12,258 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 5, 'branchRoot': 'R1tu4lN0de', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'daturainoxia'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:54:12,262 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:54:12,262 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:54:12,262 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:54:18,490 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:54:37,730 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:54:40,034 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:54:40,351 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:54:40,492 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:54:40,492 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:54:40,493 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:54:40,505 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:54:40,506 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:54:40,506 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:54:40,509 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:54:40,509 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:54:40,509 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:54:40,511 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:54:40,511 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:54:40,511 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:54:40,517 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 0, 'branchRoot': 'kykko', 'canAcceptChildren': False, 'childLimit': 25, 'children': [], 'hasParent': False, 'isBranchRoot': False, 'parent': ''}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:54:40,526 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:54:40,526 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:54:40,526 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:54:51,204 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:54:52,111 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:55:31,072 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:55:33,553 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:55:33,798 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:55:33,898 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:55:33,899 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:55:33,899 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:55:33,911 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:55:33,911 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:55:33,911 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:55:33,914 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:55:33,914 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:55:33,915 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:55:33,916 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:55:33,916 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:55:33,916 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:55:33,921 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:55:33,928 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:55:33,928 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:55:33,928 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:55:45,635 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:55:49,683 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:55:50,656 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 10:58:03,786 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 10:58:05,262 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 10:58:05,514 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 10:58:05,666 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 10:58:05,667 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 10:58:05,667 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 10:58:05,677 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:58:05,678 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 10:58:05,678 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 10:58:05,681 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 10:58:05,681 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 10:58:05,681 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 10:58:05,682 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 10:58:05,683 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 10:58:05,683 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 10:58:05,688 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 10:58:05,694 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 10:58:05,694 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 10:58:05,694 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 10:58:17,565 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 10:58:17,566 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:01:36,268 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:01:38,352 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:01:38,563 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:01:38,701 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:01:38,702 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:01:38,703 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:01:38,720 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:01:38,720 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:01:38,720 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:01:38,727 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:01:38,727 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:01:38,727 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:01:38,736 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:01:38,736 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:01:38,736 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:01:38,742 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:01:38,749 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:01:38,749 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:01:38,749 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:01:55,844 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:03:07,839 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:03:22,713 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:03:23,919 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:03:24,123 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:03:24,254 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:03:24,255 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:03:24,256 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:03:24,279 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:03:24,279 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:03:24,280 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:03:24,284 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:03:24,284 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:03:24,284 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:03:24,288 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:03:24,288 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:03:24,288 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:03:24,296 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:03:24,302 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:03:24,302 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:03:24,302 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:03:32,742 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:09:16,468 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:09:22,852 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:09:23,053 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:09:23,228 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:09:23,228 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:09:23,228 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:09:23,245 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:09:23,245 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:09:23,245 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:09:23,246 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:09:23,246 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:09:23,247 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:09:23,247 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:09:23,247 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:09:23,247 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:09:23,250 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:09:23,257 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:09:23,257 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:09:23,257 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:09:33,774 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 11:09:33,925 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:12:54,372 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:13:02,320 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:13:02,531 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:13:02,656 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:13:02,657 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:13:02,658 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:13:02,670 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:13:02,670 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:13:02,670 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:13:02,675 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:13:02,675 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:13:02,675 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:13:02,678 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:13:02,678 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:13:02,678 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:13:02,683 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:13:02,689 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:13:02,690 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:13:02,690 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:13:14,673 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 11:13:19,525 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 11:13:19,526 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:14:53,403 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:14:55,041 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:14:55,274 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:14:55,431 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:14:55,431 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:14:55,432 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:14:55,443 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:14:55,443 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:14:55,443 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:14:55,447 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:14:55,447 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:14:55,447 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:14:55,448 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:14:55,448 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:14:55,448 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:14:55,454 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:14:55,460 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:14:55,460 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:14:55,460 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:15:08,727 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 11:15:09,861 - clients.soulseek_client - ERROR - search / download error: list index out of range
+2025-05-28 11:15:09,862 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:18:06,615 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:18:10,398 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:18:10,604 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:18:10,753 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:18:10,753 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:18:10,754 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:18:10,768 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:18:10,768 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:18:10,768 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:18:10,777 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:18:10,777 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:18:10,777 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:18:10,780 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:18:10,780 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:18:10,780 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:18:10,786 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:18:10,796 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:18:10,796 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:18:10,796 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:18:21,642 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 11:20:43,303 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 11:20:44,685 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 11:20:44,876 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 11:20:44,986 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 11:20:44,987 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 11:20:44,988 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 11:20:45,000 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:20:45,001 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 11:20:45,001 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 11:20:45,008 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 11:20:45,008 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 11:20:45,008 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 11:20:45,010 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 11:20:45,010 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 11:20:45,010 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 11:20:45,016 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 11:20:45,023 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 11:20:45,023 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 11:20:45,023 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 11:20:58,369 - clients.soulseek_client - INFO - disconnected from slskd

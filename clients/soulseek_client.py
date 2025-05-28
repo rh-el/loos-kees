@@ -1,10 +1,8 @@
 import asyncio
-import json
 import logging
-from pathlib import Path
+import time
+import unicodedata
 import slskd_api 
-from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
 import re
 from config import Config
 from urllib.parse import urlparse
@@ -15,10 +13,8 @@ logger = logging.getLogger(__name__)
 
 class SoulseekClient:
     def __init__(self):
-        # Valider et corriger l'URL du host
         self.host = self._validate_host_url(Config.SLSKD_HOST)
         
-        # Initialiser l'API slskd avec ou sans API key
         if Config.SLSKD_API_KEY:
             self.api = slskd_api.SlskdClient(
                 host=self.host,
@@ -27,7 +23,6 @@ class SoulseekClient:
                 api_key=Config.SLSKD_API_KEY
             )
         else:
-            # Utiliser seulement username/password
             self.api = slskd_api.SlskdClient(
                 host=self.host,
                 username=Config.SLSKD_USERNAME,
@@ -36,34 +31,27 @@ class SoulseekClient:
         self.connected = False
     
     def _validate_host_url(self, host):
-        """Valider et corriger l'URL du host slskd"""
         if not host:
-            raise ValueError("SLSKD_HOST ne peut pas être vide")
+            raise ValueError("SLSKD_HOST can not be empty")
         
-        # Si l'URL ne commence pas par http:// ou https://, ajouter http://
         if not host.startswith(('http://', 'https://')):
             host = f"http://{host}"
-            logger.info(f"Schéma ajouté à l'URL: {host}")
         
-        # Valider l'URL
         try:
             parsed = urlparse(host)
             if not parsed.netloc:
-                raise ValueError(f"URL invalide: {host}")
+                raise ValueError(f"invalid url: {host}")
         except Exception as e:
-            raise ValueError(f"Erreur lors de la validation de l'URL {host}: {e}")
+            raise ValueError(f"url validation error {host}: {e}")
         
         return host
     
     async def connect(self):
-        """Se connecter à slskd"""
         try:
             logger.info("Tentative de connexion à slskd...")
             
-            # Diagnostic détaillé de la connexion
             await self._diagnose_connection()
             
-            # Vérifier la connexion via l'API (sans await car ce ne sont pas des coroutines)
             try:
                 status = self.api.application.state()
                 logger.info(f"slskd status: {status}")
@@ -133,9 +121,7 @@ class SoulseekClient:
             raise
     
     async def _diagnose_connection(self):
-        """Diagnostiquer la connexion slskd"""
         
-        # Tests de connectivité
         test_urls = [
             f"{self.host}",
             f"{self.host}/api/v0/application/version",
@@ -145,9 +131,8 @@ class SoulseekClient:
         async with aiohttp.ClientSession() as session:
             for url in test_urls:
                 try:
-                    logger.info(f"Test de {url}")
+                    logger.info(f"url test: {url}")
                     
-                    # Préparer les headers d'authentification si nécessaire
                     auth = None
                     if Config.SLSKD_USERNAME and Config.SLSKD_PASSWORD:
                         auth = aiohttp.BasicAuth(Config.SLSKD_USERNAME, Config.SLSKD_PASSWORD)
@@ -160,222 +145,211 @@ class SoulseekClient:
                         logger.info(f"Status: {response.status}")
                         logger.info(f"Content-Type: {response.headers.get('Content-Type', 'N/A')}")
                         
-                        # Lire le contenu pour diagnostic
                         content = await response.text()
                         if len(content) > 500:
                             content = content[:500] + "..."
-                        logger.info(f"Réponse: {content}")
                         
                         if response.status == 401:
-                            logger.error("Erreur d'authentification (401) - Vérifiez username/password/API key")
+                            logger.error("authentication error (401) - verify username/password/apikey")
                         elif response.status == 403:
-                            logger.error("Accès interdit (403) - Permissions insuffisantes")
+                            logger.error("forbidden error (403)")
                         elif response.status == 404:
-                            logger.error("Endpoint non trouvé (404) - Vérifiez l'URL et la version de slskd")
+                            logger.error("endpoint not found (404) - verify url and slskd version")
                         elif response.status >= 500:
-                            logger.error(f"Erreur serveur ({response.status}) - Problème avec slskd")
+                            logger.error(f"server error ({response.status}) - slskd issue")
                         
                 except asyncio.TimeoutError:
-                    logger.error(f"Timeout sur {url}")
+                    logger.error(f"{url} timeout")
                 except Exception as e:
-                    logger.error(f"Erreur lors du test de {url}: {e}")
+                    logger.error(f"test error {url}: {e}")
     
     
     async def disconnect(self):
-        """Déconnecter de slskd"""
         if self.connected:
-            # Note: slskd-api ne nécessite pas de déconnexion explicite
             self.connected = False
-            logger.info("Déconnecté de slskd")
+            logger.info("disconnected from slskd")
     
     async def search_and_download(self, track: dict) -> dict:
-        """Recherche et télécharge une track"""
-        try:
-            # 1. Formater la requête de recherche
-            query = self._format_search_query(track)
-            
-            # 2. Effectuer la recherche
-            search_results = await self.api.searches.search_text(query)
+        print(f"Search: {track['artist']} - {track['title']}")
 
-            tmp = True
-            while tmp:
-                logger.debug(f"Requête de recherche: {search_results}")
-                state = await self.api.searches.state(search_results["id"])
+        try:
+
+            query = self._format_search_query(track)
+            search_results = self.api.searches.search_text(query)
+
+
+            while True:
+                logger.debug(f"search: {search_results}")
+                state = self.api.searches.state(search_results["id"])
                 if state["state"] != "InProgress":
                     break
-
-            search_responses = await self.api.searches.search_responses(search_results["id"])
+                await asyncio.sleep(2)
+            search_responses = self.api.searches.search_responses(search_results["id"])
+            print(f"🎃 //// {track}")
+            # print(f"💀 //// {search_responses}")
+            if len(search_responses) == 0:
+                print(f"🙀 {track} not found")
+                return {'success': False, 'error': 'track not found'}
 
             mp3_responses = []
             flac_responses = []
 
             for singleTrack in search_responses:
-                print(f"🅰️{singleTrack}")
                 if len(singleTrack["files"]) == 0:
                     continue
+                filename = singleTrack["files"][0]["filename"]
 
-                if singleTrack["files"][0]["filename"].split(".")[-1] == "mp3":
+                if self._is_valid_audio_file(filename, "mp3"):
                     if "bitRate" not in singleTrack["files"][0]: 
                         continue
                     if singleTrack["files"][0]["bitRate"] == 320:
                         mp3_responses.append(singleTrack)
                         break
 
-                if singleTrack["files"][0]["filename"].split(".")[-1] == "flac":
+                if self._is_valid_audio_file(filename, "flac"):
                     flac_responses.append(singleTrack)
-
-            print(f"#️🆔{mp3_responses}")
-            
-            if len(search_responses) == 0:
-                return {'success': False, 'error': 'Aucun résultat trouvé'}
             
             if len(mp3_responses) > 0:
-                download_result = await self._download_file(mp3_responses[0], track)
-                return download_result
-             
-            return
-                    
+                print(f"👾 // downloading: {mp3_responses[0]}")
+                downloading = self._download_file(mp3_responses[0])
+                if downloading["success"]:
+                    return {'success': True, 'message': f"downloading mp3 {track}"}
+            
+            if len(flac_responses) > 0:
+                downloading = self._download_file(flac_responses[0])
+                if downloading["success"]:
+                    return {'success': True, 'message': f"downloading flac {track}"}
+            
         except Exception as e:
-            logger.error(f"Erreur lors de la recherche/téléchargement: {e}")
+            logger.error(f"search / download error: {e}")
             return {'success': False, 'error': str(e)}
     
+    def _remove_accents(self, text: str) -> str:
+        return ''.join(
+            c for c in unicodedata.normalize("NFKD", text)
+            if not unicodedata.combining(c)
+        )
+    
     def _format_search_query(self, track: dict) -> str:
-        """Formate une requête de recherche optimisée"""
         artist = track['artist']
         title = track['title']
-        
-        # Nettoyer les caractères spéciaux
+
         artist = re.sub(r'[^\w\s]', ' ', artist).strip()
         title = re.sub(r'[^\w\s]', ' ', title).strip()
         
-        # Supprimer les mots en trop
+        artist = self._remove_accents(artist)
+        title = self._remove_accents(title)
+
         title = re.sub(r'\b(feat|ft|featuring|remix|remastered|deluxe)\b.*', '', title, flags=re.IGNORECASE)
         
         return f"{artist} {title}".strip()
     
-    def _find_best_match(self, track: dict, files: list) -> dict:
-        """Trouve le meilleur match parmi les résultats"""
-        if not files:
-            return None
-        
-        scored_files = []
-        
-        for file in files:
-            # Vérifier le format audio
-            if not self._is_valid_audio_file(file.get('filename', '')):
-                continue
-            
-            # Vérifier la qualité minimum
-            if not self._meets_quality_requirements(file):
-                continue
-            
-            # Calculer le score de similarité
-            score = self._calculate_similarity_score(track, file)
-            
-            scored_files.append({
-                'file': file,
-                'score': score
-            })
-        
-        if not scored_files:
-            return None
-        
-        # Trier par score décroissant
-        scored_files.sort(key=lambda x: x['score'], reverse=True)
-        
-        logger.debug(f"Meilleur match (score: {scored_files[0]['score']}): {scored_files[0]['file'].get('filename')}")
-        
-        return scored_files[0]['file']
+    def _is_valid_audio_file(self, filename: str, format: str) -> bool:
+        if filename.lower().endswith(format): 
+            return True
+        return False
     
-    def _is_valid_audio_file(self, filename: str) -> bool:
-        """Vérifie si le fichier est un format audio valide"""
-        audio_extensions = ['.mp3', '.flac', '.m4a', '.wav', '.ogg', '.aac']
-        return any(filename.lower().endswith(ext) for ext in audio_extensions)
-    
-    def _meets_quality_requirements(self, file: dict) -> bool:
-        """Vérifie si le fichier respecte les critères de qualité"""
-        # Vérifier la taille (éviter les fichiers trop petits)
-        size = file.get('size', 0)
-        if size < 1024 * 1024:  # < 1MB
-            return False
-        
-        # Vérifier le bitrate si disponible
-        filename = file.get('filename', '').lower()
-        
-        # Exclure les bitrates trop bas mentionnés dans le nom
-        bad_bitrates = ['64kbps', '96kbps', '128kbps']
-        if any(br in filename for br in bad_bitrates):
-            return False
-        
-        return True
-    
-    def _calculate_similarity_score(self, track: dict, file: dict) -> int:
-        """Calcule un score de similarité entre la track et le fichier"""
-        filename = file.get('filename', '').lower()
-        
-        artist = track['artist'].lower()
-        title = track['title'].lower()
-        
-        # Score basé sur la similarité fuzzy
-        artist_score = fuzz.partial_ratio(artist, filename)
-        title_score = fuzz.partial_ratio(title, filename)
-        
-        # Score combiné
-        combined_score = (artist_score + title_score) / 2
-        
-        # Bonus pour certains formats
-        if '.flac' in filename:
-            combined_score += 10
-        elif '.mp3' in filename and '320' in filename:
-            combined_score += 5
-        
-        # Malus pour certains mots-clés indésirables
-        bad_keywords = ['karaoke', 'instrumental', 'cover', 'live']
-        for keyword in bad_keywords:
-            if keyword in filename:
-                combined_score -= 20
-        
-        return int(combined_score)
-    
-    async def _download_file(self, file: dict, track: dict) -> dict:
-        """Télécharge un fichier"""
+    def _download_file(self, file: dict) -> dict:
         try:
             username = file.get('username')
             filename = file["files"][0].get('filename')
             
             if not username or not filename:
-                return {'success': False, 'error': 'Informations de fichier incomplètes'}
+                print("missing filename or username")
+                return {'success': False, 'error': 'missing filename or username'}
 
-            enqueue = await self.api.transfers.enqueue(username=username, files=file["files"])
-
-                # download_request = await self.api.transfers.get_download(
-                #     username=username,
-                #     id=filename
-                # )
-                # print(download_request)
-                
-                # # Si pas de réponse JSON, considérer que c'est normal
-                # if download_request is None:
-                #     logger.info(f"Téléchargement initié (pas de réponse): {filename}")
-                #     return {
-                #         'success': True,
-                #         'filename': filename,
-                #         'username': username,
-                #         'download_id': None
-                #     }
-                
-            
-            return 
+            self.api.transfers.enqueue(username=username, files=file["files"])
+            return {"success": True}                
             
         except Exception as e:
-            logger.error(f"Erreur lors du téléchargement: {e}")
+            logger.error(f"download error: {e}")
             return {'success': False, 'error': str(e)}
-    
-    def _sanitize_filename(self, filename: str) -> str:
-        """Nettoie un nom de fichier pour le système de fichiers"""
-        # Supprimer les caractères interdits
-        invalid_chars = '<>:"/\\|?*'
-        for char in invalid_chars:
-            filename = filename.replace(char, '_')
         
-        return filename.strip()
+    # def _meets_quality_requirements(self, file: dict) -> bool:
+    #     """Vérifie si le fichier respecte les critères de qualité"""
+    #     # Vérifier la taille (éviter les fichiers trop petits)
+    #     size = file.get('size', 0)
+    #     if size < 1024 * 1024:  # < 1MB
+    #         return False
+        
+    #     # Vérifier le bitrate si disponible
+    #     filename = file.get('filename', '').lower()
+        
+    #     # Exclure les bitrates trop bas mentionnés dans le nom
+    #     bad_bitrates = ['64kbps', '96kbps', '128kbps']
+    #     if any(br in filename for br in bad_bitrates):
+    #         return False
+        
+    #     return True
+    
+    # def _calculate_similarity_score(self, track: dict, file: dict) -> int:
+    #     """Calcule un score de similarité entre la track et le fichier"""
+    #     filename = file.get('filename', '').lower()
+        
+    #     artist = track['artist'].lower()
+    #     title = track['title'].lower()
+        
+    #     # Score basé sur la similarité fuzzy
+    #     artist_score = fuzz.partial_ratio(artist, filename)
+    #     title_score = fuzz.partial_ratio(title, filename)
+        
+    #     # Score combiné
+    #     combined_score = (artist_score + title_score) / 2
+        
+    #     # Bonus pour certains formats
+    #     if '.flac' in filename:
+    #         combined_score += 10
+    #     elif '.mp3' in filename and '320' in filename:
+    #         combined_score += 5
+        
+    #     # Malus pour certains mots-clés indésirables
+    #     bad_keywords = ['karaoke', 'instrumental', 'cover', 'live']
+    #     for keyword in bad_keywords:
+    #         if keyword in filename:
+    #             combined_score -= 20
+        
+    #     return int(combined_score)
+    
+    # def _sanitize_filename(self, filename: str) -> str:
+    #     """Nettoie un nom de fichier pour le système de fichiers"""
+    #     # Supprimer les caractères interdits
+    #     invalid_chars = '<>:"/\\|?*'
+    #     for char in invalid_chars:
+    #         filename = filename.replace(char, '_')
+        
+    #     return filename.strip()
+    
+
+        # def _find_best_match(self, track: dict, files: list) -> dict:
+    #     """Trouve le meilleur match parmi les résultats"""
+    #     if not files:
+    #         return None
+        
+    #     scored_files = []
+        
+    #     for file in files:
+    #         # Vérifier le format audio
+    #         if not self._is_valid_audio_file(file.get('filename', '')):
+    #             continue
+            
+    #         # Vérifier la qualité minimum
+    #         if not self._meets_quality_requirements(file):
+    #             continue
+            
+    #         # Calculer le score de similarité
+    #         score = self._calculate_similarity_score(track, file)
+            
+    #         scored_files.append({
+    #             'file': file,
+    #             'score': score
+    #         })
+        
+    #     if not scored_files:
+    #         return None
+        
+    #     # Trier par score décroissant
+    #     scored_files.sort(key=lambda x: x['score'], reverse=True)
+        
+    #     logger.debug(f"Meilleur match (score: {scored_files[0]['score']}): {scored_files[0]['file'].get('filename')}")
+        
+    #     return scored_files[0]['file']

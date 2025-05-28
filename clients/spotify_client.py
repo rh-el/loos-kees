@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 class SpotifyClient:
     def __init__(self):
-        # Authentification Spotify (optionnelle pour playlists publiques)
+
         if Config.SPOTIFY_CLIENT_ID and Config.SPOTIFY_CLIENT_SECRET:
             try:
                 credentials = SpotifyClientCredentials(
@@ -16,43 +16,37 @@ class SpotifyClient:
                     client_secret=Config.SPOTIFY_CLIENT_SECRET
                 )
                 self.sp = spotipy.Spotify(client_credentials_manager=credentials)
-                logger.info("Authentification Spotify réussie")
+                logger.info("spotify authentication success")
             except Exception as e:
-                logger.warning(f"Échec de l'authentification Spotify: {e}")
+                logger.warning(f"spotify authentication error: {e}")
                 self.sp = spotipy.Spotify()
         else:
-            # Mode sans authentification - fonctionne pour les playlists publiques
             self.sp = spotipy.Spotify()
-            logger.info("Mode Spotify anonyme - playlists publiques uniquement")
+            logger.info("spotify anonymous mode - public playlists only")
     
     def extract_playlist_id(self, url: str) -> str:
-        """Extrait l'ID de playlist depuis une URL Spotify"""
         patterns = [
             r'https://open\.spotify\.com/playlist/([a-zA-Z0-9]+)',
             r'spotify:playlist:([a-zA-Z0-9]+)',
-            r'^([a-zA-Z0-9]+)$'  # ID direct
+            r'^([a-zA-Z0-9]+)$'
         ]
-        
         for pattern in patterns:
             match = re.search(pattern, url)
             if match:
                 return match.group(1)
-        
-        raise ValueError(f"URL Spotify invalide: {url}")
+        raise ValueError(f"invalid spotify url: {url}")
     
     async def get_playlist_tracks(self, playlist_url: str) -> list:
-        """Récupère toutes les tracks d'une playlist Spotify"""
         try:
             playlist_id = self.extract_playlist_id(playlist_url)
-            logger.info(f"ID de playlist extrait: {playlist_id}")
+            logger.info(f"extracted playlist id: {playlist_id}")
             
-            # Récupérer les informations de la playlist avec gestion d'erreur
             try:
                 playlist = self.sp.playlist(playlist_id)
-                logger.info(f"Playlist: {playlist['name']} par {playlist['owner']['display_name']}")
+                logger.info(f"playlist: {playlist['name']} by {playlist['owner']['display_name']}")
             except Exception as e:
                 if "404" in str(e) or "not found" in str(e).lower():
-                    raise ValueError(f"Playlist non trouvée ou privée. Vérifiez que la playlist est publique et que l'URL est correcte.")
+                    raise ValueError(f"playlist not found or private.")
                 else:
                     raise e
             
@@ -62,7 +56,7 @@ class SpotifyClient:
                 results = self.sp.playlist_tracks(playlist_id)
             except Exception as e:
                 if "404" in str(e):
-                    raise ValueError("Cette playlist nécessite une authentification Spotify. Ajoutez vos credentials dans le .env")
+                    raise ValueError("authentication needed for this playlist.")
                 else:
                     raise e
             
@@ -71,7 +65,6 @@ class SpotifyClient:
                     if item['track'] and item['track']['type'] == 'track':
                         track = item['track']
                         
-                        # Extraire les informations essentielles
                         track_info = {
                             'title': track['name'],
                             'artist': ', '.join([artist['name'] for artist in track['artists']]),
@@ -83,32 +76,28 @@ class SpotifyClient:
                         }
                         
                         tracks.append(track_info)
-                        logger.debug(f"Ajouté: {track_info['artist']} - {track_info['title']}")
+                        logger.debug(f"added: {track_info['artist']} - {track_info['title']}")
                 
-                # Pagination
                 if results['next']:
                     results = self.sp.next(results)
                 else:
                     break
             
-            logger.info(f"Récupéré {len(tracks)} tracks de la playlist")
+            logger.info(f"found {len(tracks)} tracks")
             return tracks
             
         except Exception as e:
-            logger.error(f"Erreur lors de la récupération de la playlist: {e}")
+            logger.error(f"error while getting playlist informations: {e}")
             raise
     
-    def clean_search_query(self, track: dict) -> str:
-        """Nettoie et formate une requête de recherche"""
-        artist = track['artist']
-        title = track['title']
+    # def clean_search_query(self, track: dict) -> str:
+    #     artist = track['artist']
+    #     title = track['title']
         
-        # Nettoyer les caractères spéciaux et parenthèses
-        artist = re.sub(r'\([^)]*\)', '', artist).strip()
-        title = re.sub(r'\([^)]*\)', '', title).strip()
-        title = re.sub(r'\[[^\]]*\]', '', title).strip()
+    #     artist = re.sub(r'\([^)]*\)', '', artist).strip()
+    #     title = re.sub(r'\([^)]*\)', '', title).strip()
+    #     title = re.sub(r'\[[^\]]*\]', '', title).strip()
         
-        # Supprimer les feat., ft., etc.
-        title = re.sub(r'\s+(feat|ft|featuring)\.?\s+.*', '', title, flags=re.IGNORECASE)
+    #     title = re.sub(r'\s+(feat|ft|featuring)\.?\s+.*', '', title, flags=re.IGNORECASE)
         
-        return f"{artist} {title}".strip()
+    #     return f"{artist} {title}".strip()
