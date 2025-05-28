@@ -15,30 +15,43 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger(__name__)
+downloader = PlaylistDownloader()
 
 
+async def spotify_playlist_download():
+    playlist_url = input("enter a public spotify playlist url: ").strip()
+    if not playlist_url:
+        print("playlist URL required")
+    results = await downloader.extract_spotify_metadata(playlist_url)
+    return results
+
+async def bandcamp_likes_download():
+    cookie = input("enter your bandcamp cookie: ")
+    results = await downloader.get_bandcamp_likes_metadata(cookie)
+    return results
+
+def get_result(playlist, download_result):
+    successful = sum(1 for r in download_result if r['success'])
+    print(f"done! found {successful}/{len(playlist)} tracks")
 
 async def main():
-    downloader = PlaylistDownloader()
-    
     while True:
-        is_spotify_playlist = input("spotify playlist download?: y/n").strip().lower()
+        is_spotify_playlist = input("spotify playlist download?: y/n - ").strip().lower()
         if is_spotify_playlist == "y":
-            playlist_url = input("enter a public spotify playlist url: ").strip()
-            if not playlist_url:
-                print("playlist URL required")
-                continue
-            
+            spotify_playlist = await spotify_playlist_download()
+            result = await downloader.download_playlist(spotify_playlist)
+            get_result(spotify_playlist, result)
 
-            results = await downloader.download_playlist(playlist_url)
-    
-    # try:
-    #     print(f"\nRésultats: {sum(1 for r in results if r['success'])} succès sur {len(results)} tentatives")
-    
-    # except KeyboardInterrupt:
-    #     logger.info("Arrêt demandé par l'utilisateur")
-    # except Exception as e:
-    #     logger.error(f"Erreur fatale: {e}")
+        is_bandcamp_likes = input("bandcamp likes download?: y/n - ").strip().lower()
+        if is_bandcamp_likes == "y":
+            bandcamp_playlist = await bandcamp_likes_download()
+            result = await downloader.download_playlist(bandcamp_playlist)
+            get_result(spotify_playlist, result)
+
+        is_done = input("anything else?: y/n - ").strip().lower()
+        if is_done == "n":
+            print("farewell, friend.")
+            break
 
 if __name__ == "__main__":
     asyncio.run(main())

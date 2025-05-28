@@ -1,3 +1,4 @@
+import json
 from clients.soulseek_client import SoulseekClient
 from clients.spotify_client import SpotifyClient
 from config import Config
@@ -9,36 +10,45 @@ class PlaylistDownloader:
         Config.validate()
         self.spotify = SpotifyClient()
         self.soulseek = SoulseekClient()
-        
-    async def download_playlist(self, playlist_url: str):
+    
+    async def extract_spotify_metadata(self, playlist_url: str): 
+        tracks = await self.spotify.get_playlist_tracks(playlist_url)
+        return tracks
+
+
+    async def get_bandcamp_likes_metadata(self, cookie: str):
         try:
+            process = await asyncio.create_subprocess_exec(
+                'node', './bc-fetch.js', cookie,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
+            )
+            stdout, stderr = await process.communicate()
             
-            tracks = await self.spotify.get_playlist_tracks(playlist_url)
-            print(f"found {len(tracks)} tracks in the playlist")
+            if process.returncode != 0:
+                print(f"error while executing js script: {stderr.decode()}")
+                return None
             
+            result_text = stdout.decode('utf-8').strip()
+            return json.loads(result_text)
+            
+        except FileNotFoundError:
+            print("error: node.js not installed or can't find bc-fetch.js")
+            return None
+        except json.JSONDecodeError as e:
+            print(f"json parsing error: {e}")
+            print(f"received output: {result_text}")
+            return None
+        except Exception as e:
+            print(f"unexpected error: {e}")
+            return None
+    
+
+    async def download_playlist(self, track_list: list):
+        try:
             await self.soulseek.connect()
-            
-            result = await asyncio.gather(*[self.soulseek.search_and_download(track) for track in tracks])
-            total_downloads = [ entry for entry in result if entry.get("success") is True]
-
-            print(f"{len(total_downloads)} / {len(tracks)} downloads")
-
-            # for i, track in enumerate(tracks, 1):
-                # print(f"[{i}/{len(tracks)}] Search: {track['artist']} - {track['title']}")
-
-            #     result = self.soulseek.search_and_download(track)
-                # results.append(result)
-                
-                # if result['success']:
-                #     logger.info(f"✓ Téléchargement réussi: {track['title']}")
-                # else:
-                #     logger.warning(f"✗ Échec: {track['title']} - {result['error']}")
-            
-            # 4. Statistiques finales
-            # successful = sum(1 for r in results if r['success'])
-            # logger.info(f"Terminé! {successful}/{len(tracks)} téléchargements réussis")
-            
-            return total_downloads
+            result = await asyncio.gather(*[self.soulseek.search_and_download(track) for track in track_list])
+            return result
             
         except Exception as e:
             print(f"download error: {e}")

@@ -170,13 +170,12 @@ class SoulseekClient:
             logger.info("disconnected from slskd")
     
     async def search_and_download(self, track: dict) -> dict:
-        print(f"Search: {track['artist']} - {track['title']}")
+        track_artist_title = f"{track['artist']} - {track['title']}"
+        print(f"track: {track_artist_title}")
 
         try:
-
             query = self._format_search_query(track)
             search_results = self.api.searches.search_text(query)
-
 
             while True:
                 logger.debug(f"search: {search_results}")
@@ -185,10 +184,11 @@ class SoulseekClient:
                     break
                 await asyncio.sleep(2)
             search_responses = self.api.searches.search_responses(search_results["id"])
-            print(f"🎃 //// {track}")
-            # print(f"💀 //// {search_responses}")
+            print(f"😡 {search_responses}")
+            print(f"🤓 processing track: {track_artist_title}")
+
             if len(search_responses) == 0:
-                print(f"🙀 {track} not found")
+                print(f"🙀 {track_artist_title} - not found")
                 return {'success': False, 'error': 'track not found'}
 
             mp3_responses = []
@@ -219,7 +219,10 @@ class SoulseekClient:
                 downloading = self._download_file(flac_responses[0])
                 if downloading["success"]:
                     return {'success': True, 'message': f"downloading flac {track}"}
-            
+                
+            print(f"🙀 could not find {track_artist_title} with specified criteria")
+            return {'success': False, 'error': 'could not find track with specified criteria'}
+
         except Exception as e:
             logger.error(f"search / download error: {e}")
             return {'success': False, 'error': str(e)}
