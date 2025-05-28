@@ -4758,3 +4758,72 @@ asyncio.exceptions.CancelledError
 2025-05-28 16:50:36,523 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
 2025-05-28 16:50:36,523 - clients.soulseek_client - INFO - Connecté à slskd avec succès
 2025-05-28 16:50:51,828 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 17:16:25,542 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 17:16:44,610 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 17:16:44,611 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 17:16:44,621 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 17:16:44,621 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 17:16:44,621 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 17:16:44,623 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 17:16:44,623 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 17:16:44,623 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 17:16:44,624 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 17:16:44,624 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 17:16:44,624 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 17:16:44,630 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 17:16:44,633 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 17:16:44,633 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 17:16:44,633 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 17:16:44,633 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 17:18:07,802 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 17:19:00,833 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 17:43:34,197 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 17:45:17,634 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 17:45:34,163 - clients.spotify_client - INFO - extracted playlist id: 31PsvPUlpNi3VwjRRomcgG
+2025-05-28 17:45:34,374 - clients.spotify_client - INFO - playlist: Ma playlist n° 1 by kikko
+2025-05-28 17:45:34,504 - clients.spotify_client - INFO - found 10 tracks
+2025-05-28 17:45:34,505 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-28 17:45:34,506 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-28 17:45:34,515 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 17:45:34,515 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-28 17:45:34,515 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-28 17:45:34,518 - clients.soulseek_client - INFO - Status: 200
+2025-05-28 17:45:34,519 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-28 17:45:34,519 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-28 17:45:34,520 - clients.soulseek_client - INFO - Status: 404
+2025-05-28 17:45:34,520 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-28 17:45:34,520 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-28 17:45:34,527 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 6, 'branchRoot': 'Mockingbrd', 'canAcceptChildren': True, 'childLimit': 25, 'children': [], 'hasParent': True, 'isBranchRoot': False, 'parent': 'scmstr'}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-28 17:45:34,534 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-28 17:45:34,534 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-28 17:45:34,534 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-28 17:45:48,639 - clients.soulseek_client - INFO - disconnected from slskd
+2025-05-28 18:05:18,654 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:06:55,504 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:09:01,199 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:09:49,243 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:10:55,766 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:11:51,598 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:12:10,432 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:14:47,215 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:15:27,201 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:16:05,583 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:16:51,444 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:17:51,054 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:18:56,302 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:19:55,129 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:20:27,319 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:22:20,151 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:22:37,507 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:27:59,813 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:29:31,581 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:30:33,948 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:31:15,244 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:31:46,350 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:33:14,481 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:38:08,585 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:38:59,414 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:39:28,980 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:40:28,110 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:42:02,278 - clients.spotify_client - INFO - spotify authentication success
+2025-05-28 18:49:19,436 - clients.spotify_client - INFO - spotify authentication success

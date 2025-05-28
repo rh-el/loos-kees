@@ -45,8 +45,9 @@ async def main():
         is_bandcamp_likes = input("bandcamp likes download?: y/n - ").strip().lower()
         if is_bandcamp_likes == "y":
             bandcamp_playlist = await bandcamp_likes_download()
-            result = await downloader.download_playlist(bandcamp_playlist)
-            get_result(spotify_playlist, result)
+            # print(bandcamp_playlist)
+            # result = await downloader.download_playlist(bandcamp_playlist)
+            # get_result(spotify_playlist, result)
 
         is_done = input("anything else?: y/n - ").strip().lower()
         if is_done == "n":
@@ -56,3 +57,8 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
+
+
+# log tracks not found
+# bandcamp -> get all tracks from each album
+# format scrapped obj to fit download_playlist format
