@@ -170,6 +170,7 @@ class SoulseekClient:
             logger.info("disconnected from slskd")
     
     async def search_and_download(self, track: dict) -> dict:
+        await asyncio.sleep(1)
         track_artist_title = f"{track['artist']} - {track['title']}"
         print(f"track: {track_artist_title}")
 
@@ -216,6 +217,7 @@ class SoulseekClient:
                     return {'success': True, 'message': f"downloading mp3 {track}"}
             
             if len(flac_responses) > 0:
+                print(f"👾 // downloading: {flac_responses[0]}")
                 downloading = self._download_file(flac_responses[0])
                 if downloading["success"]:
                     return {'success': True, 'message': f"downloading flac {track}"}
@@ -260,7 +262,6 @@ class SoulseekClient:
             if not username or not filename:
                 print("missing filename or username")
                 return {'success': False, 'error': 'missing filename or username'}
-
             self.api.transfers.enqueue(username=username, files=file["files"])
             return {"success": True}                
             

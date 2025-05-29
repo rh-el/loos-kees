@@ -43,11 +43,19 @@ class PlaylistDownloader:
             print(f"unexpected error: {e}")
             return None
     
+    async def sem_task(self, track, semaphore):
+        async with semaphore:
+            await asyncio.sleep(1)
+            return await self.soulseek.search_and_download(track)
+            
 
     async def download_playlist(self, track_list: list):
+        # fix parallel tasks limit 
+        semaphore = asyncio.Semaphore(2)
         try:
             await self.soulseek.connect()
-            result = await asyncio.gather(*[self.soulseek.search_and_download(track) for track in track_list])
+
+            result = await asyncio.gather(*(self.sem_task(track, semaphore) for track in track_list))
             return result
             
         except Exception as e:
