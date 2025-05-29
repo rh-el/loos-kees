@@ -1,7 +1,4 @@
-// const require = createRequire(import.meta.url);
 import bcfetch from 'bandcamp-fetch';
-// import { createRequire } from "module";
-// const readline = require('readline');
 
 const getAlbumTracklist = async (albumUrl) => {
     const params = {albumUrl: albumUrl}
