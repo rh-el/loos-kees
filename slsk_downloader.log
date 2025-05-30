@@ -5148,3 +5148,20 @@ asyncio.exceptions.CancelledError
 2025-05-29 17:09:09,567 - clients.soulseek_client - ERROR - Erreur lors de la connexion Soulseek: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 2025-05-29 17:09:09,568 - clients.soulseek_client - ERROR - Erreur de connexion à slskd: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 2025-05-29 17:09:09,568 - clients.soulseek_client - ERROR - Configuration utilisée - Host: http://localhost:5030, Username: kykko
+2025-05-29 18:17:58,776 - clients.spotify_client - INFO - spotify authentication success
+2025-05-29 18:18:39,568 - clients.soulseek_client - INFO - Tentative de connexion à slskd...
+2025-05-29 18:18:39,568 - clients.soulseek_client - INFO - url test: http://localhost:5030
+2025-05-29 18:18:39,662 - clients.soulseek_client - INFO - Status: 200
+2025-05-29 18:18:39,663 - clients.soulseek_client - INFO - Content-Type: text/html
+2025-05-29 18:18:39,663 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/version
+2025-05-29 18:18:39,826 - clients.soulseek_client - INFO - Status: 200
+2025-05-29 18:18:39,826 - clients.soulseek_client - INFO - Content-Type: application/json; charset=utf-8
+2025-05-29 18:18:39,827 - clients.soulseek_client - INFO - url test: http://localhost:5030/api/v0/application/state
+2025-05-29 18:18:39,836 - clients.soulseek_client - INFO - Status: 404
+2025-05-29 18:18:39,837 - clients.soulseek_client - INFO - Content-Type: N/A
+2025-05-29 18:18:39,837 - clients.soulseek_client - ERROR - endpoint not found (404) - verify url and slskd version
+2025-05-29 18:18:39,870 - clients.soulseek_client - INFO - slskd status: {'version': {'full': '0.22.5.0 (0.22.5.0+7b99d333)', 'current': '0.22.5.0', 'latest': '0.22.5.0', 'isUpdateAvailable': False, 'isCanary': False, 'isDevelopment': False}, 'pendingReconnect': False, 'pendingRestart': False, 'server': {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}, 'relay': {'mode': 'Controller', 'controller': {'state': 'Disconnected'}, 'agents': []}, 'user': {'username': 'kykko', 'privileges': {'isPrivileged': False, 'privilegesRemaining': 0}, 'statistics': {'averageSpeed': 0, 'directoryCount': 0, 'fileCount': 0, 'uploadCount': 0}}, 'distributedNetwork': {'branchLevel': 0, 'branchRoot': 'kykko', 'canAcceptChildren': False, 'childLimit': 25, 'children': [], 'hasParent': False, 'isBranchRoot': False, 'parent': ''}, 'shares': {'scanPending': False, 'scanning': False, 'ready': True, 'faulted': False, 'cancelled': False, 'scanProgress': 1, 'hosts': ['local'], 'directories': 0, 'files': 0}, 'rooms': [], 'users': []}
+2025-05-29 18:18:39,891 - clients.soulseek_client - INFO - État du serveur Soulseek: {'address': 'vps.slsknet.org', 'ipEndPoint': '208.76.170.59:2271', 'state': 'Connected, LoggedIn', 'isConnected': True, 'isLoggedIn': True, 'isTransitioning': False}
+2025-05-29 18:18:39,891 - clients.soulseek_client - INFO - Déjà connecté et authentifié sur le réseau Soulseek
+2025-05-29 18:18:39,891 - clients.soulseek_client - INFO - Connecté à slskd avec succès
+2025-05-29 18:33:19,108 - clients.soulseek_client - INFO - disconnected from slskd
